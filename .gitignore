@@ -1,0 +1,10 @@
+## 
+*.docx
+debug.log
+
+/Git-and-GitHub
+/html
+/jupyter
+/markdown
+/VSC
+/xml
