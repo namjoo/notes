@@ -296,6 +296,7 @@ h1+span*4
 ```
 section>h1>b+h2>li*3
 ```html
+
 <section>
     <h1>
         <b></b>
@@ -307,7 +308,9 @@ section>h1>b+h2>li*3
     </h1>
 </section>
 ```
+
 section>(h1>b)+h2>li*3
+
 ```html
 <section>
     <h1><b></b></h1>
@@ -325,20 +328,24 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error iusto vitae 
 delectus eos facilis, quaerat quisquam. Veniam, placeat.
 ```
 lorem30
+
 ```html
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo corporis facere eligendi fugiat! Quisquam maiores odio sit, nemo veniam illo consequatur harum id optio atque incidunt accusantium natus suscipit provident.
 ```
 
 lorem3
+
 ```html
 Lorem, ipsum dolor.
 ```
 
 lorem6
+
 ```html
 Lorem ipsum dolor sit amet consectetur.
 ```
 ul>li.item*3>lorem3
+
 ```html
 <ul>
     <li class="item">Lorem, ipsum dolor.</li>
@@ -348,6 +355,7 @@ ul>li.item*3>lorem3
 ```
 
 section>li>a.link{click me}
+
 ```html
 <section>
     <li><a href="" class="link">click</a></li>
@@ -356,13 +364,13 @@ section>li>a.link{click me}
 </section>
 ```
 
-ul>li*2^p
+ul>li*2^div
 ```html
 <ul>
     <li></li>
     <li></li>
 </ul>
-<p></p>
+<div></div>
 ```
 section>h1>span*2^^div
 ```html
@@ -371,7 +379,94 @@ section>h1>span*2^^div
 </section>
 <div></div>
 ```
-E:\IT\Emmet\12
+&nbsp;
+img[title]
+```html
+<img src="" alt="" title="">
+```
+
+img[title="my title"]
+```html
+<img src="" alt="" title="my title">
+```
+
+[title="div tag"]
+
+```html
+<div title="div tag"></div>
+```
+
+
+img[title][source="ddd"]
+<img src="" alt="" title="" source="ddd">
+
+change default
+
+input[type="checkbox"]
+```html
+<input type="checkbox">
+```
+
+ul>li.item-$*3
+```html
+    <ul>
+        <li class="item-1"></li>
+        <li class="item-2"></li>
+        <li class="item-3"></li>
+    </ul>
+```
+
+```
+ul>li.item-$*3{the number of item $}
+```
+
+```html
+    <ul>
+        <li class="item-1">the number of item 1</li>
+        <li class="item-2">the number of item 2</li>
+        <li class="item-3">the number of item 3</li>
+    </ul>
+```
+div{this is  parameters}*3
+```html
+    
+    <div> this is  parameters</div>
+    <div> this is  parameters</div>
+    <div> this is  parameters</div>
+```
+div*3{ this is  parameters}
+```HTML
+    <div> this is  parameters</div>
+    <div> this is  parameters</div>
+    <div> this is  parameters</div>
+```
+div{this is the paragraph $$}*3
+```HTML
+    <div>this is the paragraph 01</div>
+    <div>this is the paragraph 02</div>
+    <div>this is the paragraph 03</div>
+```
+div{this is the paragraph $$$}*4
+```html 
+    <div>this is the paragraph 001</div>
+    <div>this is the paragraph 002</div>
+    <div>this is the paragraph 003</div>
+    <div>this is the paragraph 004</div>
+```
+
+.item-$@4*5
+```html
+    <div class="item-4"></div>
+    <div class="item-5"></div>
+    <div class="item-6"></div>
+    <div class="item-7"></div>
+    <div class="item-8"></div>
+```
+E:\IT\Emmet
+
+
+
+
 
 ## Visual studio code
 View > pallete   |   ctrl + shift + p
@@ -451,9 +546,85 @@ Git Documention: https://docs.github.com/en
 ### Install git
 Download from git-scm.com
 
-```git
+ ```git
 git --version
 ```
+
+<div dir='rtl' align='right'>
+فایل تنظیمات عمومی (global) مربوط به git
+</div>
+
+
+C:\Users\Namjoo\.bash_history
+C:\Users\Namjoo\.gitconfig
+<div dir='rtl' align='right'>
+یک فایل تنظیمات سیستمی نیز وجو دارد که زمانی که در یک سیستم چندین کاربر کار می کنند مورد استفاده قرار میگیرد
+
+یک فایل تنظمیات دیگر نیر به صورت local در سیستم وجود دارد. این فایل زمانی که با دستور git init دایرکتوری جاری را با git،  track میکنیم  در مسیر جاری به آدرس
+.git/config ایجاد میگردد
+</div>
+
+```git
+git config
+git config --global user.name = namjoo
+git config --global user.email = namjoosadr@yahoo.com
+```
+<div dir='rtl' align='right'>
+با دو دوستور بالا نام و ایمیل خود را درفایل global تنظیم میکنیم
+</div>
+
+```git
+git config --list
+```
+<div dir='rtl' align='right'>
+با دستور بالا تنظمیات اعمال شدهدر فایل global قابل مشاهده است.
+</div>
+```git
+git config --global --edit
+```
+<div dir='rtl' align='right'>
+فایل config را در editor پیش  فرض برای ویرایش باز میکند
+</div>
+<div dir='rtl' align='right'>
+اگر --global نوشته نشود سیستم local را در نظر میگیرد
+از دستورات لینوکس در git bash میتوان استفاده کرد.
+</div>
+
+```git
+cd project_directory
+git init
+code .
+```
+<div dir='rtl' align='right'>اگر visual stdio code روی سیستم نصب است
+دستور اخر پوشه جاری را در VSC باز میکند
+</div>
+
+
+```git
+git config
+git config user.name = namjoo
+git config user.email = namjoosadr@yahoo.com
+```
+<div dir='rtl' align='right'>
+با فرض اینکه در پوشه پروژه هستیم
+تنظیمات را روی فایل config محلی انجام میدهد
+</div>
+
+```git
+git help
+git help config
+git help add
+git help <command>
+git config -h
+```
+
+
+
+
+
+
+
+
 
 
 
@@ -629,6 +800,7 @@ console.log(person);
 
 &nbsp;
 ### Use debugger
+
 ```javascript
 debugger;
 ```
@@ -640,7 +812,7 @@ Press F8 for rusume remain code
 
 ### validate
 ```javascript
-    <form action="namjoo.ir/calc.html" name="formname" method="POST" onsubmit="return validate()">
+<form action="namjoo.ir/calc.html" name="formname" method="POST" onsubmit="return validate()">
       <input type="text" name="fname"/>
       <input type="submit" value="submit" />
     </form>
@@ -706,5 +878,51 @@ people.push(new person('Tomas','565',32))
 people.push(new person('George','5g65',20))
 ```
 &nbsp;
+```javascript
+var x = function(a,b){return a +b;}
+var y = x(3,7);
+console.log(y)
+```
+Output:
+10
+```javascript
+var x = new Function("a","b","return a +b")
+var y = x(4,7);
+console.log(y);
+```
+Output:
+11
 
-E:\IT\skills\js\js\19_JavaScript
+```javascript
+(function(){alert('ok')})()
+```
+Self Invoke
+&nbsp;
+
+  Arrow Function
+```javascript
+var sum = (a,b)=> a+b;
+alert(sum(5,11));
+``` 
+&nbsp;
+
+```javascript
+function  sum(){
+          for (i in arguments){
+            console.log(i,arguments[i])
+          }
+      
+      }
+      sum(4,"john",true,653)
+```
+ E:\IT\skills\js\js\21_JavaScript
+
+
+
+
+## CSS
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+https://caniuse.com/
+
+E:\IT\htmlcss\css-rocket\12-multi-level-connect-selectors
