@@ -579,9 +579,11 @@ git config --list
 <div dir='rtl' align='right'>
 با دستور بالا تنظمیات اعمال شدهدر فایل global قابل مشاهده است.
 </div>
+
 ```git
 git config --global --edit
 ```
+&nbsp;
 <div dir='rtl' align='right'>
 فایل config را در editor پیش  فرض برای ویرایش باز میکند
 </div>
@@ -618,11 +620,43 @@ git help <command>
 git config -h
 ```
 
+<div dir='rtl' align='right'>
+به directory که آن را توسط git ترک میکنیم، Working directory میگوییم.
+</div>
+
+```git
+git add note.txt
+```
+add note.txt to stages and tracked files
+ 
+```git
+git status
+```
+<div dir='rtl' align='right'>
+وضعیت کل دایرکتوری رو میبینیم
+</div>
 
 
+```git
+git commit -m "add note"
+```
+Add files to repository and history
 
+```git
+git log
+```
+<div dir='rtl' align='right'>تاریخچه commit ها را میتوانیم ببینیم</div>
 
+```git
+git add .
+```
+Add all current files to repository and history
 
+```git
+start index.html
+```
+Open index.html in your browser.
+4 toplearn
 
 
 
@@ -925,4 +959,90 @@ function  sum(){
 https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 https://caniuse.com/
 
-E:\IT\htmlcss\css-rocket\12-multi-level-connect-selectors
+```css
+a[href]{
+    background:yellow;
+}
+
+a[href="yahoo.com"]{
+    font-size: 1.5em;
+}
+
+a[href*="google"]{
+   font-size: 3em;
+}
+
+
+a[href$="net"]{
+    color:blue;
+    font-size: xx-large;
+ }
+
+li[class="item"] a{
+    color:black;
+}
+
+
+div li[class~="item"] a{
+    background-color:black;
+    font-size: 5em;
+}
+
+li > span{
+}
+
+li + span{
+style to span that come directly after li
+/* <li>/<li>
+<span></span> */
+}
+
+li.item + span{
+    style to span that come directly after <li class="item">
+    /* <li>/<li>
+    <span></span> */
+  }
+
+li ~ span{
+
+  }
+
+
+li:hover{
+
+}
+li:hover a{
+  color:#fff;
+}
+```
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+```css
+li::before{
+  content:" before "
+  color:blue;
+}
+
+li:after{
+  content:" before "
+  color:red;
+}
+p::first-letter{
+  color:green;
+}
+p::first-line{
+  color:green;
+}
+
+*{
+
+}
+.header *{
+
+}
+```
+search for css reset.
+E:\IT\html-css\css-ro\23-inheritance
+
+## Notes
+https://roadmap.sh
