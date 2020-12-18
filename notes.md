@@ -210,6 +210,31 @@ https://developer.mozilla.org/en-US/docs/Web/HTML
 <script></script>
 ```
 
+```html
+<meta http-equiv="cache-control" content="public">
+<meta http-equiv="cache-control" content="private">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="cache-control" content="no-store">
+<meta http-equiv="refresh" content="10; url=http://yoursite.com">
+<meta http-equiv="refresh" content="5">
+<meta http-equiv="set-cookie" content="user_id=123; path=/; expires= Saturday, 3-Jan-18 23:59:59 GMT">
+<meta name="description" content=" insert description about site here.">
+<meta name="keywords" content="keyword 1, keyword 2, keyword 3 ">
+<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, follow">
+<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, nofollow">
+<meta name="generator" content="phpStorm">
+<meta name="author" content="admin">
+<meta name="expires" content="Tue, 21 Jun 1999">
+<meta name="expires" content="never">
+<meta name="copyright" content="(c) 2018  example.com">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+for viewport: width، height، initial-scale، minimum-scale، maximum-scale , user-scalable
+
+
 ## Emmet
 !!!
 Output:
@@ -949,7 +974,46 @@ function  sum(){
       }
       sum(4,"john",true,653)
 ```
- E:\IT\skills\js\js\21_JavaScript
+ Document.querySelectorAll()
+style.width
+style.height
+style.color
+setinterval
+clearinterval
+EventTarget.addEventListener()
+var field = document.createElement('fieldset');
+field.appendChild(document.createTextNode('Status: '));
+Node.insertBefore()
+newItem.appendChild(textnode);                    // Append the text to <li>
+let childNode = parentNode.removeChild(childNode);
+parentNode.replaceChild(newChild, oldChild);
+list.insertBefore(newItem, list.childNodes[0]);  // Insert <li> before the first child of <ul>
+
+document.documentelement.clientheight
+document.documentelement.clientwidth
+document.body.clientheight
+document.body.clientwidth
+document.body.click()
+screen.availwidth
+screen.availheight
+window.location.href
+window.location.hostname
+window.location.pathname
+window.location.protocol
+window.location.assign
+window.history.back()
+window.history.forward()
+confirm
+prompt
+\n
+settimeout
+cleartimeout
+tolocaltimestring
+
+30
+
+
+
 
 
 
@@ -1041,8 +1105,221 @@ p::first-line{
 
 }
 ```
-search for css reset.
-E:\IT\html-css\css-ro\23-inheritance
+Search for css reset.
+```css
+#block{
+    background: linear-gradient(80deg, red 90%,blue,green );
+    height: 800px;
+}
+
+#block2{
+    background: linear-gradient(to right, red 90%,blue,green );
+    height: 800px;
+}
+#block2{
+    background: #333 );
+    height: 800px;
+}
+#block2{
+    background: rgb(100,120,130);
+    height: 800px;
+}
+#block2{
+    background: rgba(100,120,130,0.5);
+    height: 800px;
+}
+#block2{
+    background: hsl(100,50%,50%);
+    height: 800px;
+}
+#block2{
+    background: hsla(100,50%,50%,0.5);
+    height: 800px;
+}
+```
+Website for color:
+flatuicolors.com
+uigradients.com
+```css
+#block{
+    background: radial-gradient(red 40%,blue 50%,green );
+    height: 800px;
+}
+#block{
+    background: radial-gradient(circle at center ,blue,green);
+    height: 800px;
+}
+background:radial-gradient(circle at center ,rgba(0,0,255,0.2),rgba(255,0,0,0.2)),url(Lichens.jpg)
+background:linear-gradient(circle at center ,rgba(0,0,255,0.2),rgba(255,0,0,0.2)),url(Lichens.jpg)
+```
+
+
+
+
+## Linux
+
+Layer of Linux:
+1. Hardware
+2. Kernel
+3. System call interface
+4. User interface
+
+Shell
+* GUI (Graphic interface)
+* CLI (Command line interface)
+
+<div dir='rtl' align='right'>
+Shell یک برنامه است.
+</div>
+Type of shell:
+* bash
+* zshell
+* kshell
+<div dir='rtl' align='right'>
+این ابزار ها تفاوتی با هم ندارند فقط در ابزار یا رنگ بندی متفاوت هستند
+</div>
+
+<div dir='rtl' align='right'>
+bash شل استاندارد linux است.
+علامت ها یا $ است یا #
+زمانی که با کاربر root در حال کار هستیم علامت # نمایش داده میشود و زمانی که کاربر غیر از root هستیم علامت $ نمایش داده می شود
+</div>
+
+-khandeshavad
+suder4
+suder5
+
+#### Firmware
+n computing, firmware is a specific class of computer software that provides the low-level control for a device's specific hardware.
+
+#### Bios
+In computing, BIOS (basic input/output system) is firmware used to perform hardware initialization during the booting process, and to provide runtime services for operating systems and programs. The BIOS firmware comes pre-installed on a personal computer's system board, and it is the first software to run when powered on
+
+<div dir='rtl' align='right'>
+ترتیب بوت شدن سیستم را مشخص میکند
+</div>
+
+#### superblock
+A superblock (zero sector) is a record of the characteristics of a filesystem, including its size, the block size, the empty and the filled blocks and their respective counts, the size and location of the inode tables, the disk block map and usage information, and the size of the block groups
+
+#### GRUB
+Sometimes called GNU GRUB, which is short for GNU GRand Unified Bootloader, is the typical boot loader for most modern Linux systems.
+
+The GRUB splash screen is often the first thing you see when you boot your computer. It has a simple menu where you can select some options. If you have multiple kernel images installed, you can use your keyboard to select the one you want your system to boot with. By default, the latest kernel image is selected.
+<div dir='rtl' align='right'>
+Grub هما منوی انتخاب سیستم عاملی که باید لود شود را نمایش میدهد.
+بعد از منو لود کردن سیستم عامل ، initramfs که برنامه کوچکی است لود می شود و آن سیستم عامل اصلی را لود میکند.
+initramfs و grub در مسیر /boot قرار دادند
+تما گزینه ایی که در ابتدایی که لینوکس لود می شود و چک می شود را initramfs انجام میدهد.
+</div>
+
+#### Daemon
+In multitasking computer operating systems, a daemon is a computer program that runs as a background process, rather than being under the direct control of an interactive user.
+
+#### init
+In Unix-based computer operating systems, init is the first process started during booting of the computer system. Init is a daemon process that continues running until the system is shut down. It is the direct or indirect ancestor of all other processes and automatically adopts all orphaned processes
+
+<div dir='rtl' align='right'>
+از centos 7 به قبل یک proccess به نام  init.d یا init وجود دارد  که از centos 7 , و 7 به بعد systemd  شد.
+حرف d آخر کلمات systemd sshd httpd به daemon اشاره دارد. که نشان میدهد این سرویس ها در background اجرا می شود. 
+</div>
+
+```shell
+man
+man man
+ls
+pwd
+```
+
+command <Tab><Tab>
+```shell
+ls <Tab><Tab>
+```
+```shell
+cd
+```
+cd is built in
+
+find in manual page
+```shell
+/pattern  search forward
+```
+n  find next
+N  find previous
+```shell
+?pattern  search backward
+```
+n  find previous
+N  find next
+
+
+```shell
+clear
+```
+Ctrl + l   # clear shell
+
+```shell
+cd -
+```
+back to previous directory(Back button in windows)
+```shell
+cd ..
+ls -l   #show detail
+ls -l -h   #h human readable.  h work with another option. 
+ls -lh
+ls -l --human-readable
+ls -a #show hidden files 
+ls -t #sort by time modify
+ls -tr # reverse sorting
+cd # go to home directory 
+```
+cd and ls files are in /user/bin (in centos)
+cd and ls files are in /bin (in ubuntu)
+su, umount, mount, mv,nc, ... files are in /bin (in ubuntu)
+
+```shell
+whereis ls
+```
+tell us that where ls is located
+```shell
+/user/bin/ls
+```
+```shell
+file <file>
+file ls
+```
+
+file command shows type of <file> 
+
+<div dir='rtl' align='right'></div>
+
+
+
+
+
+
+
+## XML
+
+
+
+
+
+## SEO 
+webmaster tools = Search console
+are important
+* have links 
+* Site map
+
+
+
 
 ## Notes
 https://roadmap.sh
+
+
+
+
+
+
+
